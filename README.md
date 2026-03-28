@@ -1,6 +1,6 @@
-# Nexara-AI - Maintenance Intelligence
+# Nexara AI - Maintenance Intelligence
 
-NexaraAI is an AI-powered predictive maintenance scheduling application designed for manufacturing equipment. Built with Python and Streamlit, this application helps detect degradation patterns, identify near-misses, and generate maintenance schedules using both rule-based heuristics and advanced machine learning techniques.
+Nexara AI is an AI-powered predictive maintenance scheduling application designed for manufacturing equipment. Built with Python and Streamlit, this application helps detect degradation patterns, identify near-misses, and generate maintenance schedules using both rule-based heuristics and advanced machine learning techniques.
 
 ## Features
 
@@ -30,7 +30,18 @@ NexaraAI is an AI-powered predictive maintenance scheduling application designed
 
 To enable the AI-powered analysis features, you will need to provide your API keys. The application supports multiple LLM providers.
 
+1. Copy the `.env.example` file to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+2. Open `.env` and configure any combination of the following API keys:
+   - `OPENAI_API_KEY`
+   - `ANTHROPIC_API_KEY`
+   - `GOOGLE_API_KEY`
+   - `GROQ_API_KEY`
+   - `COHERE_API_KEY`
 
+*Note: Without these API keys, the system will fall back to using robust rule-based analysis and will remain fully functional.*
 
 ## Usage
 
